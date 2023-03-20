@@ -1,0 +1,5 @@
+pandas
+python-binance
+pandas_ta
+websocket-client
+telegram
