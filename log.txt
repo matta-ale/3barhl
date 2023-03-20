@@ -1,0 +1,4 @@
+2023-03-20 00:03:30,061 Starting new HTTPS connection (1): api.binance.com:443
+2023-03-20 00:03:30,353 https://api.binance.com:443 "GET /api/v3/ping HTTP/1.1" 200 2
+2023-03-20 00:03:30,546 Starting new HTTPS connection (1): fapi.binance.com:443
+2023-03-20 00:03:30,620 https://fapi.binance.com:443 "GET /fapi/v1/continuousKlines?contractType=PERPETUAL&interval=30m&limit=200&pair=AVAXUSDT HTTP/1.1" 451 224

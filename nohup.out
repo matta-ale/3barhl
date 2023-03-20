@@ -1,0 +1,33 @@
+arrancando
+Traceback (most recent call last):
+  File "/root/3barhl/3barhl.py", line 15, in <module>
+    import websocket
+ModuleNotFoundError: No module named 'websocket'
+Traceback (most recent call last):
+  File "/root/3barhl/3barhl.py", line 22, in <module>
+    import pandas_ta as ta
+ModuleNotFoundError: No module named 'pandas_ta'
+Traceback (most recent call last):
+  File "/root/3barhl/3barhl.py", line 70, in <module>
+    candles = client.futures_continous_klines(pair = ticker,contractType ='PERPETUAL', interval =timeframe[interval],limit = cant_rows_df)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 6021, in futures_continous_klines
+    return self._request_futures_api('get', 'continuousKlines', data=params)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 382, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 358, in _request
+    return self._handle_response(self.response)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 367, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=0): Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.
+Traceback (most recent call last):
+  File "/root/3barhl/3barhl.py", line 70, in <module>
+    candles = client.futures_continous_klines(pair = ticker,contractType ='PERPETUAL', interval =timeframe[interval],limit = cant_rows_df)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 6021, in futures_continous_klines
+    return self._request_futures_api('get', 'continuousKlines', data=params)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 382, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 358, in _request
+    return self._handle_response(self.response)
+  File "/usr/local/lib/python3.10/dist-packages/binance/client.py", line 367, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=0): Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error.
